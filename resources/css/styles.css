@@ -1,0 +1,140 @@
+/* Lab 3 styling — light polish on top of Bootstrap */
+
+:root{
+  --text: #111827;
+  --muted: #6b7280;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --border: rgba(17, 24, 39, 0.10);
+  --shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 20% 10%, rgba(59,130,246,0.10), transparent 60%),
+    radial-gradient(900px 500px at 85% 20%, rgba(16,185,129,0.08), transparent 60%),
+    var(--bg);
+}
+
+/* Make headings feel consistent */
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(1.8rem, 2.8vw, 2.4rem); }
+h2 { font-size: clamp(1.3rem, 2.0vw, 1.7rem); }
+h3 { font-size: 1.15rem; }
+
+/* Links */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Bootstrap navbar polish */
+.navbar {
+  backdrop-filter: blur(8px);
+}
+.navbar .navbar-brand {
+  letter-spacing: -0.01em;
+}
+
+/* Main content spacing if you use <main> */
+main {
+  padding-bottom: 2rem;
+}
+
+/* Cards: nicer shadow + hover */
+.card {
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* Images: consistent rounding */
+img {
+  border-radius: 14px;
+}
+
+/* Tables: softer look */
+table {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 0.6rem 0.75rem;
+}
+thead th {
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+tbody td {
+  border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+/* Footer styling (if you have <footer>) */
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ===== Visible polish helpers ===== */
+
+.page-wrap {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(59,130,246,0.14), rgba(16,185,129,0.10));
+  border: 1px solid rgba(17, 24, 39, 0.10);
+  border-radius: 18px;
+  padding: 1.25rem 1.25rem;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+}
+
+.hero h1, .hero h2 {
+  margin-bottom: 0.4rem;
+}
+
+.hero .lead {
+  color: rgba(17,24,39,0.72);
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(17,24,39,0.12);
+  background: rgba(255,255,255,0.65);
+  font-size: 0.9rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-title h2, .section-title h3 {
+  margin: 0;
+}

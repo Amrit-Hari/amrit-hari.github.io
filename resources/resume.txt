@@ -1,0 +1,21 @@
+Amrit Hari
+
+Focus
+Research and design work focused on democracy in the tech world—especially democratic ownership and governance in online economies.
+
+Education
+University of Colorado Boulder — Bachelor of Science - BA, Computer Science & political science minor (Jan 2025 – May 2028)
+
+Experience
+Research Fellow — MEDLab CU Boulder (Mar 2025 – Present), Boulder, CO
+
+What I work on
+- Research themes: democratic ownership + governance in online economies.
+- Translate ideas into concrete design/research outputs (writeups, prototypes, frameworks).
+- Support projects exploring more democratic forms of digital platforms and institutions.
+
+Skills
+- Python, C++
+- Git / GitHub
+- HTML/CSS (basic), Bootstrap (course use)
+- Research writing & synthesis
